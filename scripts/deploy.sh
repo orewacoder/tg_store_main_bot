@@ -10,7 +10,7 @@ STACK_NAME=${STACK_NAME?Variable not set} \
 TAG=${TAG?Variable not set} \
 docker compose \
 -f docker-compose.yml \
-config > ./docker-stack.yml
+config | sed "/published:/s/\"//g" | sed "/^name:/d" > ./docker-stack.yml
 
 #docker-auto-labels ./docker-stack.yml
 
