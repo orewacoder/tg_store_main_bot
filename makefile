@@ -19,6 +19,6 @@ deploy-traefik:
 	export EMAIL=admin@investor-bot.com
 	export DOMAIN=traefik.investor-bot.com
 	export USERNAME=pgnbot
-	export PASSWORD=8FzDJ3Ny5GK508A0
+	export PASSWORD=o2UPXV378X9M4g3yPiRB
 	export HASHED_PASSWORD=$(openssl passwd -apr1 $PASSWORD)
 	docker stack deploy -c traefik-config.yml traefik
