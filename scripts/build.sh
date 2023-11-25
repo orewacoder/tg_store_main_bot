@@ -4,6 +4,6 @@
 set -e
 
 TAG=${TAG?Variable not set} \
-docker-compose \
+docker compose \
 -f docker-compose.yml \
 build

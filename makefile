@@ -4,9 +4,9 @@ build-api:
 	TAG=prod bash ./scripts/build.sh
 
 deploy-api:
-	TLD=b4.uz \
-	DOMAIN=api.b4.uz \
-	TRAEFIK_TAG=api.b4.uz \
+	TLD=testosterons.site \
+	DOMAIN=testosterons.site \
+	TRAEFIK_TAG=pgn-bot \
 	STACK_NAME=pgnbot \
 	TAG=prod bash ./scripts/deploy.sh
 	#docker service ls -q | xargs -n1 docker service update --force
