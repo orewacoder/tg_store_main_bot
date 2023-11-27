@@ -141,8 +141,3 @@ async def handle_payment_confirmation(order: str, request: Request, background_t
 
     background_tasks.add_task(handle_payment, order, data)
     return '*ok*'
-
-
-@app.get('/api')
-async def welcome():
-    return {"message": "Welcome to fastapi bro"}
