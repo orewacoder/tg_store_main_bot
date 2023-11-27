@@ -3,7 +3,6 @@ import os
 from fastapi import FastAPI, Request, BackgroundTasks, HTTPException
 from app.bot import bot, dp, setup
 from aiogram.types import Update
-
 from app.db.mongodb import engine
 from app.models import User
 from app.models.order import Order, Cart
