@@ -4,7 +4,7 @@ build-api:
 	TAG=prod bash ./scripts/build.sh
 
 deploy-api:
-	docker service rm backend
+	#docker service rm backend
 	TLD=testosterons.site \
 	DOMAIN=testosterons.site \
 	TRAEFIK_TAG=pgn-bot \
